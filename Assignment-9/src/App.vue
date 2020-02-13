@@ -45,7 +45,7 @@
 						<h4>Your Data</h4>
 					</div>
 					<div class="panel-body">
-						<p>Full Name: {{fullName}}</p>
+						<p>Full Name: {{fullName.firstName}} {{fullName.lastName}}</p>
 						<p>Mail: {{email}}</p>
 						<p>Password: {{password}}</p>
 						<p>Store in Database?: {{storeData ? "Yes" : "No"}}</p>
@@ -61,7 +61,8 @@
     export default {
         data() {
             return {
-                fullName: 'Mac Cel',
+                // fullName: 'Mac Cel',
+                fullName: {},
                 email: "",
                 password: "",
                 storeData: "no",
